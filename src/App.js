@@ -1,10 +1,13 @@
 import './App.css';
+import FruitContainer from './components/FruitContainer'
 
 function App() {
+const fruits = ['apple 🍏','orange 🍊','pineapple 🍍','banana 🍌','avocado 🥑', 'kiwi 🥝']
+
   return (
     <div className="App">
      <h1> Fruit Filter </h1>
-     <p>Talking about Unidirection Flow today.</p>
+     <FruitContainer fruits = {fruits} />
     </div>
   );
 }
