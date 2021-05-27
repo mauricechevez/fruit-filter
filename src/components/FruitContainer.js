@@ -13,9 +13,13 @@ class FruitContainer extends Component{
      let value = event.target.value //app...
      const filteredFruitList = this.props.fruits.filter(fruit=>{
          // What are we trying to do here? Check if fruit value matches the filtered value
-         if (fruit.includes(value.toLowerCase())){
+        /*  if (fruit.includes(value.toLowerCase())){
             return true;
-         } 
+         } else{
+             return false;
+         } */
+         return fruit.includes(value.toLowerCase()) //same as an IF statement. Its a boolean, so we can cut out the IF statement in this case.
+
     })  
     this.setState({
         fruitsToDisplay: filteredFruitList,
